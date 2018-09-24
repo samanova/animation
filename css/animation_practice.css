@@ -1,0 +1,172 @@
+/* this is where all of your CSS styles go */
+
+
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: midnightblue;
+}
+
+.grid_container {
+    width: 650px;
+    height: 125px;
+    position: relative;
+    left: 50%;
+    top: 48%; /* for optical centering */
+    margin-top: -75px;
+    margin-left: -300px;
+    border: solid black 0px;
+    animation: container-scoot 2s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+.mono {
+    font-family: 'Atomic Age', cursive;
+    font-size: 6em;
+    float: left;
+    margin-left: 5px;
+    margin-top: 0px;
+    color: silver;
+}
+
+.mono-y {
+    font-family: 'Atomic Age', cursive;
+    font-size: 6em;
+    float: left;
+    margin-left: 5px;
+    margin-top: 0px;
+    color: midnightblue;
+}
+
+
+
+@keyframes c_fade-in {
+    0% {top: -200px; opacity: 0;}
+    100% {top: 0px; opacity: 1;}
+}
+
+@keyframes h_fade-in {
+    0% {top: -200px; opacity: 0;}
+    100% {top: 0px; opacity: 1;}
+}
+
+@keyframes e_fade-in {
+    0% {top: -200px; opacity: 0;}
+    100% {top: 0px; opacity: 1;}
+}
+
+@keyframes v_fade-in {
+    0% {top: -200px; opacity: 0;}
+    100% {top: 0px; opacity: 1;}
+}
+
+@keyframes e2_fade-in {
+    0% {top: -200px; opacity: 0;}
+    35% {top: 0px; opacity: 1;}
+    65% {top: 0px; opacity: 1;}
+    100% {top: 200px; opacity: 0;}
+}
+
+/*@keyframes e2_out {*/
+    /*0% {top: -200px; opacity: 0; transform: rotate(0deg)}*/
+    /*100% {top: 0px; opacity: 1; transform: rotate(360deg)}*/
+/*}*/
+
+@keyframes l_fade-in {
+    0% {top: -200px; opacity: 0;}
+    35% {top: 0px; opacity: 1;}
+    65% {top: 0px; opacity: 1;}
+    100% {top: 200px; opacity: 0;}
+}
+
+@keyframes l2_fade-in {
+    0% {top: -200px; opacity: 0;}
+    35% {top: 0px; opacity: 1;}
+    65% {top: 0px; opacity: 1;}
+    100% {top: 200px; opacity: 0;}
+}
+
+@keyframes e3_fade-in {
+    0% {top: -200px; opacity: 0;}
+    35% {top: 0px; opacity: 1;}
+    65% {top: 0px; opacity: 1;}
+    100% {top: 200px; opacity: 0;}
+}
+
+@keyframes y_scoot {
+    0% {left: 0px; color: midnightblue; transform: rotate(0deg)}
+    100% {left: -255px; color: silver; transform: rotate(360deg)}
+
+}
+
+@keyframes container-scoot {
+    0% {left: 50%;}
+    100% {left: 55%;}
+}
+
+
+.c {
+    position: relative;
+    animation: c_fade-in 1s cubic-bezier(.04,.1,.46,.99);
+    animation-delay: 0.5s;
+}
+
+.h {
+    position: relative;
+    animation: h_fade-in 1s cubic-bezier(.04,.1,.46,.99);
+    animation-delay: 0.55s;
+}
+
+.e {
+    position: relative;
+    animation: e_fade-in 1s cubic-bezier(.04,.1,.46,.99);
+    animation-delay: 0.6s;
+}
+
+.v {
+    position: relative;
+    animation: v_fade-in 1s cubic-bezier(.04,.1,.46,.99);
+    animation-delay: 0.65s;
+}
+
+.e2 {
+    position: relative;
+    animation: e2_fade-in 3s cubic-bezier(.04,.1,.46,.99);
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+/*.e2b {*/
+    /*position: relative;*/
+    /*animation: e2_out 1s;*/
+    /*animation-delay: 1s;*/
+/*}*/
+
+.l {
+    position: relative;
+    animation: l_fade-in 3s alternate cubic-bezier(.04,.1,.46,.99);
+    animation-delay: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+.l2 {
+    position: relative;
+    animation: l2_fade-in 3s alternate cubic-bezier(.04,.1,.46,.99);
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.e3 {
+    position: relative;
+    animation: e3_fade-in 3s alternate cubic-bezier(.04,.1,.46,.99);
+    animation-delay: 0.85s;
+    animation-fill-mode: forwards;
+}
+
+.y {
+    position: relative;
+    animation: y_scoot 2s;
+    animation-delay: 3.25s;
+    animation-fill-mode: forwards;
+}
